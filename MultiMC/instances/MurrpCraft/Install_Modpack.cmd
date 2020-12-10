@@ -21,11 +21,9 @@ call Update_Modpack.cmd
 :error_svn_missing
 echo.
 echo ERROR: SVN is missing. Did you forget to unzip the modpack to it's own folder and put the whole folder into the Instances folder, or deleted the SVN folder?
-timeout 10
 EXIT /B 1
 
 :error_svn
 echo.
 echo ERROR: Something went wront with the SVN updater tool.
-timeout 10
 EXIT /B 1
