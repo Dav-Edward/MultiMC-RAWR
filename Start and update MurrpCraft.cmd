@@ -1,4 +1,4 @@
-@echo on
+@echo off
 cd %~dp0
 IF NOT EXIST "MultiMC" goto :MultiMC_Missing
 
@@ -21,22 +21,23 @@ goto modpack_updater
 :modpack_updater
 call .\MultiMC\instances\MurrpCraft\Update_Modpack.cmd
 cd %~dp0
-.\MultiMC\MultiMC.exe -launch MurrpCraft
+start "" .\MultiMC\MultiMC.exe --launch MurrpCraft
+exit
 
 :error_svn_missing
 echo.
 echo ERROR: SVN is missing. Did you forget to unzip the modpack to it's own folder and put the whole folder into the Instances folder, or deleted the SVN folder?
 pause
-EXIT /B 1
+EXIT
 
 :error_svn
 echo.
 echo ERROR: Something went wront with the SVN updater tool.
 pause
-EXIT /B 1
+EXIT
 
 :MultiMC_Missing
 echo.
 echo MultiMC is missing. This script expects to have SVN and MultiMC as folders under the folder this script is in.
 pause
-EXIT /B 1
+EXIT
