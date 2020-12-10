@@ -16,7 +16,7 @@ echo.
 exit
 
 :modpack_updater
-call Update_Modpack.cmd
+call .\.minecraft\Update_Modpack.cmd
 
 :error_svn_missing
 echo.
