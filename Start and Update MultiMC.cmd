@@ -2,7 +2,7 @@
 echo Updating MultiMC...
 echo.
 echo.
-svn\svn.exe update --accept=tf 
-start "" .\MultiMC\MultiMC.exe
+svn\svn.exe update --accept=tf
 echo Update complete
-timeout 5
+timeout 2 
+start "" .\MultiMC\MultiMC.exe
