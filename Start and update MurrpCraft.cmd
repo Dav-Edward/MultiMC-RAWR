@@ -14,9 +14,9 @@ IF NOT EXIST "%~dp0.\svn\svn.exe" goto :error_svn_missing
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
 echo.
 echo Install complete.
-timeout 3
+timeout 5
 echo.
-exit
+goto modpack_updater
 
 :modpack_updater
 call .\MultiMC\instances\MurrpCraft\Update_Modpack.cmd
