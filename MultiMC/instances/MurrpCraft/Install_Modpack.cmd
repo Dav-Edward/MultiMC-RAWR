@@ -1,4 +1,4 @@
-@echo on
+@echo off
 cd %~dp0
 IF NOT EXIST "%~dp0.\.minecraft\Update_Modpack.cmd" goto :modpack_installer
 
