@@ -10,7 +10,7 @@ goto :modpack_updater
 echo.
 echo Installing MurrpCraft...
 IF NOT EXIST "%~dp0.\svn\svn.exe" goto :error_svn_missing
-start /wait "" ".\svn\svn.exe" checkout https://github.com/Dav-Edward/MurrpCraft.git/trunk .\MultiMC\instances\MurrpCraft --non-interactive
+.\svn\svn.exe checkout https://github.com/Dav-Edward/MurrpCraft.git/trunk .\MultiMC\instances\MurrpCraft --non-interactive
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
 echo.
 echo Install complete.
