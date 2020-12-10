@@ -1,0 +1,33 @@
+@echo off
+cd %~dp0
+IF NOT EXIST "%~dp0.\.minecraft" goto :modpack_installer
+
+IF NOT EXIST "%~dp0.\Update_Modpack.cmd" goto :modpack_installer
+
+goto :modpack_updater
+
+:modpack_installer
+echo.
+echo Installing MurrpCraft...
+IF NOT EXIST "%~dp0.\svn\svn.exe goto :error_svn_missing
+\svn\svn.exe checkout https://github.com/Dav-Edward/MurrpCraft.git/trunk . --non-interactive
+IF %ERRORLEVEL% NEQ 0 goto :error_svn
+echo.
+echo Install complete.
+echo.
+exit
+
+:modpack_updater
+call Update_Modpack.cmd
+
+:error_svn_missing
+echo.
+echo ERROR: SVN is missing. Did you forget to unzip the modpack to it's own folder and put the whole folder into the Instances folder, or deleted the SVN folder?
+timeout 10
+EXIT /B 1
+
+:error_svn
+echo.
+echo ERROR: Something went wront with the SVN updater tool.
+timeout 10
+EXIT /B 1
