@@ -2,7 +2,7 @@
 cd %~dp0
 IF NOT EXIST "MultiMC" goto :MultiMC_Missing
 
-IF NOT EXIST "%~dp0.\MultiMC\instances\MurrpCraft\Update_Modpack.cmd" goto :modpack_installer
+IF NOT EXIST "%~dp0.\MultiMC\instances\Dragons_Survival\Update_Modpack.cmd" goto :modpack_installer
 
 goto :modpack_updater
 
