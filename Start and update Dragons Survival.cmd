@@ -8,7 +8,7 @@ goto :modpack_updater
 
 :modpack_installer
 echo.
-echo Installing MurrpCraft...
+echo Installing Dragons Survival...
 IF NOT EXIST "%~dp0.\svn\svn.exe" goto :error_svn_missing
 .\svn\svn.exe checkout https://github.com/BlackAures1/Dragons_Survival_Modpack.git/trunk .\MultiMC\instances\Dragons_Survival --non-interactive
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
