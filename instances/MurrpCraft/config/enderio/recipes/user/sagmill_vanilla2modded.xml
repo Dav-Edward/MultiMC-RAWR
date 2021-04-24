@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+  <!-- vanilla item in, modded item out -->
+
+  <!-- Ender IO -->
+
+  <recipe name="Sagmill: Wheat" required="true">
+    <sagmilling energy="800">
+      <input name="item:minecraft:wheat"/>
+      <output name="dustWheat" />
+      <output name="minecraft:wheat_seeds" chance="0.2" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Mod: ? -->
+
+  <recipe name="Sagmill: Charcoal" required="false">
+    <sagmilling energy="2400">
+      <input name="minecraft:coal:1"/>
+      <output name="dustCharcoal" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Charcoal Block" required="false">
+    <sagmilling energy="2400">
+      <input name="blockCharcoal"/>
+      <output name="dustCharcoal" amount="9"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Emerald Dust" required="false">
+    <sagmilling energy="2400">
+      <input name="gemEmerald"/>
+      <output name="dustEmerald"/>
+    </sagmilling>
+  </recipe>
+
+</enderio:recipes>

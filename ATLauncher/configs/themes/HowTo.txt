@@ -1,0 +1,1 @@
+To create themes for the ATLauncher please see https://atl.pw/theme - changing the ATLauncher.zip file will ALWAYS revert changes so make a copy of the file if you're playing around.

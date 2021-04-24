@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+  <!-- Iron -->
+
+  <recipe name="Sagmill: oreIron Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreIron" />
+      <output name="POWDER_IRON" amount="2" />
+      <output name="dustTin" chance="0.05" required="false" />
+      <output name="dustNickel" chance="0.1" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Iron Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherIron" />
+      <output name="POWDER_IRON" amount="4" />
+      <output name="dustTin" amount="2" chance="0.05" required="false" />
+      <output name="dustNickel" amount="2" chance="0.1" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Iron Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreIron" />
+      <output name="oreIron" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Iron Ingot" required="true">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotIron" />
+      <output name="POWDER_IRON" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Iron Dust" required="true">
+    <smelting>
+      <input name="POWDER_IRON" />
+      <output name="ingotIron" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Iron Block" required="true">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockIron" />
+      <output name="POWDER_IRON" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Gold -->
+
+  <recipe name="Sagmill: oreGold Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreGold" />
+      <output name="dustGold" amount="2" />
+      <output name="dustCopper" chance="0.2" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Gold Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherGold" />
+      <output name="dustGold" amount="4" />
+      <output name="dustCopper" amount="2" chance="0.2" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Gold Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreGold" />
+      <output name="oreGold" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Gold Ingot" required="true">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotGold" />
+      <output name="dustGold" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Gold Dust" required="true">
+    <smelting>
+      <input name="dustGold" />
+      <output name="ingotGold" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Gold Block" required="true">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockGold" />
+      <output name="dustGold" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Copper -->
+
+  <recipe name="Sagmill: oreCopper Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCopper" />
+      <output name="dustCopper" amount="2" />
+      <output name="dustGold" chance="0.125" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Copper Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherCopper" />
+      <output name="dustCopper" amount="4" />
+      <output name="dustGold" amount="2" chance="0.125" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Copper Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreCopper" />
+      <output name="oreCopper" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Copper Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotCopper" />
+      <output name="dustCopper" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Copper Dust" required="false">
+    <smelting>
+      <input name="dustCopper" />
+      <output name="ingotCopper" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Copper Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockCopper" />
+      <output name="dustCopper" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Tin -->
+
+  <recipe name="Sagmill: oreTin Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreTin" />
+      <output name="dustTin" amount="2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Tin Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherTin" />
+      <output name="dustTin" amount="4" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Tin Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreTin" />
+      <output name="oreTin" amount="4" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Tin Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotTin" />
+      <output name="dustTin" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Tin Dust" required="false">
+    <smelting>
+      <input name="dustTin" />
+      <output name="ingotTin" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Tin Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockTin" />
+      <output name="dustTin" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Lead -->
+
+  <recipe name="Sagmill: oreLead Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreLead" />
+      <output name="dustLead" amount="2" />
+      <output name="dustSilver" chance="0.1" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Lead Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherLead" />
+      <output name="dustLead" amount="4" />
+      <output name="dustSilver" amount="2" chance="0.1" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Lead Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreLead" />
+      <output name="oreLead" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Lead Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotLead" />
+      <output name="dustLead" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Lead Dust" required="false">
+    <smelting>
+      <input name="dustLead" />
+      <output name="ingotLead" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Lead Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockLead" />
+      <output name="dustLead" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Silver -->
+
+  <recipe name="Sagmill: oreSilver Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSilver" />
+      <output name="dustSilver" amount="2" />
+      <output name="dustLead" chance="0.1" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Silver Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherSilver" />
+      <output name="dustSilver" amount="4" />
+      <output name="dustLead" amount="2" chance="0.1" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Silver Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreSilver" />
+      <output name="oreSilver" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Silver Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotSilver" />
+      <output name="dustSilver" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Silver Dust" required="false">
+    <smelting>
+      <input name="dustSilver" />
+      <output name="ingotSilver" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Silver Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockSilver" />
+      <output name="dustSilver" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Nickel -->
+
+  <recipe name="Sagmill: oreNickel Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNickel" />
+      <output name="dustNickel" amount="2" />
+      <output name="dustPlatinum" chance="0.1" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Nickel Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherNickel" />
+      <output name="dustNickel" amount="4" />
+      <output name="dustPlatinum" amount="2" chance="0.1" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Nickel Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreNickel" />
+      <output name="oreNickel" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nickel Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotNickel" />
+      <output name="dustNickel" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Nickel Dust" required="false">
+    <smelting>
+      <input name="dustNickel" />
+      <output name="ingotNickel" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Nickel Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockNickel" />
+      <output name="dustNickel" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Aluminium -->
+
+  <recipe name="Sagmill: oreAluminium Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreAluminium" />
+      <output name="dustAluminium" amount="2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Aluminium Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherAluminium" />
+      <output name="dustAluminium" amount="4" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Aluminium Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreAluminium" />
+      <output name="oreAluminium" amount="4" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Aluminium Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotAluminium" />
+      <output name="dustAluminium" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Aluminium Dust" required="false">
+    <smelting>
+      <input name="dustAluminium" />
+      <output name="ingotAluminium" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Aluminium Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockAluminium" />
+      <output name="dustAluminium" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Aluminum -->
+
+  <recipe name="Sagmill: oreAluminum Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreAluminum" />
+      <output name="dustAluminum" amount="2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Aluminum Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherAluminum" />
+      <output name="dustAluminum" amount="4" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Aluminum Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreAluminum" />
+      <output name="oreAluminum" amount="4" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Aluminum Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotAluminum" />
+      <output name="dustAluminum" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Aluminum Dust" required="false">
+    <smelting>
+      <input name="dustAluminum" />
+      <output name="ingotAluminum" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Aluminum Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockAluminum" />
+      <output name="dustAluminum" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- NaturalAluminum -->
+
+  <recipe name="Sagmill: oreNaturalAluminum Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNaturalAluminum" />
+      <output name="dustNaturalAluminum" amount="2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether NaturalAluminum Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherNaturalAluminum" />
+      <output name="dustNaturalAluminum" amount="4" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense NaturalAluminum Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreNaturalAluminum" />
+      <output name="oreNaturalAluminum" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: NaturalAluminum Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotNaturalAluminum" />
+      <output name="dustNaturalAluminum" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: NaturalAluminum Dust" required="false">
+    <smelting>
+      <input name="dustNaturalAluminum" />
+      <output name="ingotNaturalAluminum" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: NaturalAluminum Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockNaturalAluminum" />
+      <output name="dustNaturalAluminum" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Coal -->
+
+  <recipe name="Sagmill: oreCoal Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreCoal" />
+      <output name="minecraft:coal" amount="3" />
+      <output name="dustCoal" chance="0.6" />
+      <output name="gemDiamond" chance="0.001" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Coal Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherCoal" />
+      <output name="minecraft:coal" amount="5" />
+      <output name="dustCoal" chance="0.6" />
+      <output name="gemDiamond" chance="0.001" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Coal Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreCoal" />
+      <output name="oreCoal" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Redstone -->
+
+  <recipe name="Sagmill: oreRedstone Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreRedstone" />
+      <output name="dustRedstone" amount="8" />
+      <output name="dustRedstone" chance="0.2" />
+      <output name="itemSilicon" chance="0.8" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Redstone Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherRedstone" />
+      <output name="dustRedstone" amount="21" />
+      <output name="dustRedstone" amount="2" chance="0.2" />
+      <output name="itemSilicon" amount="2" chance="0.8" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Redstone Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreRedstone" />
+      <output name="oreRedstone" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Diamond -->
+
+  <recipe name="Sagmill: oreDiamond Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreDiamond, -railcraft:ore:2" />
+      <output name="gemDiamond" amount="2" />
+      <output name="gemDiamond" chance="0.25" />
+      <output name="dustCoal" chance="0.05" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Diamond Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherDiamond" />
+      <output name="gemDiamond" amount="5" />
+      <output name="gemDiamond" amount="2" chance="0.25" />
+      <output name="dustCoal" amount="2" chance="0.05" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Diamond Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreDiamond" />
+      <output name="oreDiamond" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Emerald -->
+
+  <recipe name="Sagmill: oreEmerald Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreEmerald, -railcraft:ore:3" />
+      <output name="gemEmerald" amount="2" />
+      <output name="gemEmerald" chance="0.25" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Emerald Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherEmerald" />
+      <output name="gemEmerald" amount="5" />
+      <output name="gemEmerald" amount="2" chance="0.25" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Emerald Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreEmerald" />
+      <output name="oreEmerald" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Lapis -->
+
+  <recipe name="Sagmill: oreLapis Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="oreLapis, -railcraft:ore:4" />
+      <output name="minecraft:dye:4" amount="8" />
+      <output name="minecraft:dye:4" chance="0.2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Lapis Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherLapis" />
+      <output name="minecraft:dye:4" amount="24" />
+      <output name="minecraft:dye:4" amount="3" chance="0.2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Lapis Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreLapis" />
+      <output name="oreLapis" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Quartz -->
+
+  <recipe name="Sagmill: quartz_ore Ore" required="true">
+    <sagmilling energy="3600">
+      <input name="minecraft:quartz_ore" />
+      <output name="gemQuartz" amount="2" />
+      <output name="POWDER_QUARTZ" chance="0.1" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Quartz Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreQuartz" />
+      <output name="oreQuartz" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Osmium (Mekanism) -->
+
+  <recipe name="Sagmill: oreOsmium Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreOsmium" />
+      <output name="dustOsmium" amount="2" />
+      <output name="dustOsmium" chance="0.1" required="false" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Nether Osmium Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherOsmium" />
+      <output name="dustOsmium" amount="4" />
+      <output name="dustOsmium" amount="2" chance="0.1" required="false" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Osmium Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreOsmium" />
+      <output name="oreOsmium" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Osmium Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotOsmium" />
+      <output name="dustOsmium" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Osmium Dust" required="false">
+    <smelting>
+      <input name="dustOsmium" />
+      <output name="ingotOsmium" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Osmium Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockOsmium" />
+      <output name="dustOsmium" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Ardite (TiC) -->
+
+  <recipe name="Sagmill: oreArdite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreArdite" />
+      <output name="dustArdite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Ardite Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreArdite" />
+      <output name="oreArdite" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Ardite Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotArdite" />
+      <output name="dustArdite" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Ardite Dust" required="false">
+    <smelting>
+      <input name="dustArdite" />
+      <output name="ingotArdite" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Ardite Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockArdite" />
+      <output name="dustArdite" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Cobalt (TiC) -->
+
+  <recipe name="Sagmill: oreCobalt Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCobalt" />
+      <output name="dustCobalt" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Dense Cobalt Ore" required="false">
+    <sagmilling energy="4800">
+      <input name="denseoreCobalt" />
+      <output name="oreCobalt" amount="4" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Cobalt Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotCobalt" />
+      <output name="dustCobalt" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Cobalt Dust" required="false">
+    <smelting>
+      <input name="dustCobalt" />
+      <output name="ingotCobalt" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Cobalt Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockCobalt" />
+      <output name="dustCobalt" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Steel -->
+
+  <recipe name="Sagmill: Nether Steel Ore" required="false">
+    <sagmilling energy="3200">
+      <input name="oreNetherSteel" />
+      <output name="dustSteel" amount="4" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Steel Ingot" required="false">
+    <sagmilling energy="2400" bonus="none">
+      <input name="ingotSteel" />
+      <output name="dustSteel" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Smelting: Steel Dust" required="false">
+    <smelting>
+      <input name="dustSteel" />
+      <output name="ingotSteel" />
+    </smelting>
+  </recipe>
+
+  <recipe name="Sagmill: Steel Block" required="false">
+    <sagmilling energy="3600" bonus="none">
+      <input name="blockSteel" />
+      <output name="dustSteel" amount="9" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Quark -->
+
+  <recipe name="Sagmill: Quark Ender Biotite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="quark:biotite_ore" />
+      <output name="gemEnderBiotite" amount="2" />
+      <output name="gemEnderBiotite" amount="1" chance="0.15"/>
+      <output name="minecraft:end_stone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+<!-- Thermal Fluid Ores -->
+
+  <recipe name="Sagmill: Resonate End Stone" required="false">
+    <sagmilling energy="5000">
+      <input name="oreClathrateEnder" />
+      <output name="crystalEnder" amount="2" />
+      <output name="crystalEnder" amount="2" chance="0.25" />
+      <output name="minecraft:end_stone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Oil Sand" required="false">
+    <sagmilling energy="2000">
+      <input name="thermalfoundation:ore_fluid:0" />
+      <output name="crystalCrudeOil" amount="2" />
+      <output name="crystalCrudeOil" amount="2" chance="0.25" />
+      <output name="thermalfoundation:material:833" amount="1" chance="0.15"/>
+      <output name="minecraft:sand" chance="0.15" />
+    </sagmilling>
+  </recipe>
+ 
+  <recipe name="Sagmill: Oil Red Sand" required="false">
+    <sagmilling energy="2000">
+      <input name="thermalfoundation:ore_fluid:5" />
+      <output name="crystalCrudeOil" amount="2" />
+      <output name="crystalCrudeOil" amount="2" chance="0.25" />
+      <output name="thermalfoundation:material:833" amount="1" chance="0.15"/>
+      <output name="minecraft:sand:1" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Oil Shale" required="false">
+    <sagmilling energy="2000">
+      <input name="oreClathrateOilShale" />
+      <output name="crystalCrudeOil" amount="2" />
+      <output name="crystalCrudeOil" amount="2" chance="0.25" />
+      <output name="minecraft:flint" amount="1" chance="0.15"/>
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Destabilized Redstone Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreClathrateRedstone" />
+      <output name="crystalRedstone" amount="2" />
+      <output name="crystalRedstone" amount="2" chance="0.25" />
+      <output name="itemCinnabar" amount="1" chance="0.5"/>
+      <output name="minecraft:stone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Energized Glowstone Ore" required="false">
+    <sagmilling energy="2000">
+      <input name="oreClathrateGlowstone" />
+      <output name="crystalGlowstone" amount="2" />
+      <output name="crystalGlowstone" amount="2" chance="0.25" />
+      <output name="dustSulfur" amount="1" chance="0.5"/>
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+
+  <!-- Thermal Non-Standard Ores -->
+  <recipe name="Sagmill: Iridium Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreIridium" />
+      <output name="dustIridium" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustPlatinum" chance="0.1" required="false" />
+    </sagmilling>
+  </recipe>
+
+
+<!-- Ender Ore Mod -->
+  <recipe name="Sagmill: oreEnder Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreEnder" />
+      <output name="dustEnder" amount="2" />
+      <output name="oredict:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+ 
+</enderio:recipes>

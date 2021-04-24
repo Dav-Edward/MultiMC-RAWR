@@ -1,8 +1,8 @@
 @echo off
 cd %~dp0
-IF NOT EXIST "MultiMC" goto :MultiMC_Missing
+IF NOT EXIST "ATLauncher" goto :MultiMC_Missing
 
-IF NOT EXIST "%~dp0.\MultiMC\instances\Dragons_Survival\Update_Modpack.cmd" goto :modpack_installer
+IF NOT EXIST "%~dp0.\ATLauncher\instances\Dragons_Survival\Update_Modpack.cmd" goto :modpack_installer
 
 goto :modpack_updater
 
@@ -10,7 +10,7 @@ goto :modpack_updater
 echo.
 echo Installing Dragons Survival...
 IF NOT EXIST "%~dp0.\svn\svn.exe" goto :error_svn_missing
-.\svn\svn.exe checkout https://github.com/BlackAures1/Dragons_Survival_Modpack.git/trunk .\MultiMC\instances\Dragons_Survival --non-interactive
+.\svn\svn.exe checkout https://github.com/BlackAures1/Dragons_Survival_Modpack.git/trunk .\ATLauncher\instances\Dragons_Survival --non-interactive
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
 echo.
 echo Install complete.
@@ -19,9 +19,9 @@ echo.
 goto modpack_updater
 
 :modpack_updater
-call .\MultiMC\instances\MurrpCraft\Update_Modpack.cmd
+call .\ATLauncher\instances\Dragons_Survival\Update_Modpack.cmd
 cd %~dp0
-start "" .\MultiMC\MultiMC.exe --launch Dragons_Survival
+start "" .\ATLauncher\ATLauncher.exe
 exit
 
 :error_svn_missing

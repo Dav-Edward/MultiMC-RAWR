@@ -1,0 +1,4 @@
+[14:25:18] [main/INFO]: ModLauncher running: args [--username, Davwyn, --version, 1.15.2, --gameDir, D:\Repos\MultiMC-RAWR\ATLauncher\instances\DragonsSurvival, --assetsDir, D:\Repos\MultiMC-RAWR\ATLauncher\assets, --assetIndex, 1.15, --uuid, 796db3ce3c9c460d8853aafe18742fa9, --accessToken, ????????, --userType, mojang, --versionType, release, --launchTarget, fmlclient, --fml.forgeVersion, 31.2.50, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20200515.085601, --width=854, --height=480]
+[14:25:18] [main/INFO]: ModLauncher 5.1.2+70+master.2845bb9 starting: java version 1.8.0_282 by AdoptOpenJDK
+[14:25:18] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/D:/Repos/MultiMC-RAWR/ATLauncher/libraries/org/spongepowered/mixin/0.8.2/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[14:25:18] [main/ERROR]: Cannot find launch target fmlclient, unable to launch

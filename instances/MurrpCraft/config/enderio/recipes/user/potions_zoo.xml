@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+  <recipe name="Potion: Floating">
+    <brewing>
+      <input potion="minecraft:awkward"/>
+      <reagent name="eggOwl"/>
+      <output potion="enderio:floating"/>
+    </brewing>
+  </recipe>
+
+  <recipe name="Potion: Floating, Strong">
+    <brewing>
+      <input potion="enderio:floating"/>
+      <reagent name="dustGlowstone"/>
+      <output potion="enderio:strong_floating"/>
+    </brewing>
+  </recipe>
+
+  <recipe name="Potion: Floating, Long">
+    <brewing>
+      <input potion="enderio:floating"/>
+      <reagent name="dustRedstone"/>
+      <output potion="enderio:long_floating"/>
+    </brewing>
+  </recipe>
+
+
+  <recipe name="Potion: Confusion">
+    <brewing>
+      <input potion="minecraft:awkward"/>
+      <reagent name="itemConfusingDust"/>
+      <output potion="enderio:confusion"/>
+    </brewing>
+  </recipe>
+
+  <recipe name="Potion: Confusion, Long">
+    <brewing>
+      <input potion="enderio:confusion"/>
+      <reagent name="dustRedstone"/>
+      <output potion="enderio:long_confusion"/>
+    </brewing>
+  </recipe>
+
+
+  <recipe name="Potion: Withering">
+    <brewing>
+      <input potion="minecraft:awkward"/>
+      <reagent name="itemWitheringDust"/>
+      <output potion="enderio:withering"/>
+    </brewing>
+  </recipe>
+
+  <recipe name="Potion: Withering, Long">
+    <brewing>
+      <input potion="enderio:withering"/>
+      <reagent name="dustRedstone"/>
+      <output potion="enderio:long_withering"/>
+    </brewing>
+  </recipe>
+
+</enderio:recipes>

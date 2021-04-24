@@ -1,8 +1,7 @@
 @echo off
-echo Updating MultiMC...
+echo Updating AT Launcher...
 echo.
 echo.
 svn\svn.exe update --accept=tf
 echo Update complete
-timeout 2 
-start "" .\MultiMC\MultiMC.exe
+timeout 2
