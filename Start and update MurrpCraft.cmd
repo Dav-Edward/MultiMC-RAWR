@@ -21,7 +21,7 @@ goto modpack_updater
 :modpack_updater
 call .\ATLauncher\instances\MurrpCraft\Update_Modpack.cmd
 cd %~dp0
-start "" .\ATLauncher\ATLauncher.exe
+start "" .\ATLauncher\ATLauncher.exe -launch "MurrpCraft"
 exit
 
 :error_svn_missing
