@@ -21,7 +21,7 @@ goto modpack_updater
 :modpack_updater
 call .\MultiMC\instances\MurrpCraft\Update_Modpack.cmd
 cd %~dp0
-start "" .\MultiMC\MultiMC.exe -launch "MurrpCraft"
+start "" .\MultiMC\MultiMC.exe --launch "MurrpCraft"
 exit
 
 :error_svn_missing
