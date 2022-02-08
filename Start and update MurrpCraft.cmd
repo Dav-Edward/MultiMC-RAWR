@@ -1,6 +1,6 @@
 @echo off
 cd %~dp0
-IF NOT EXIST "ATLauncher" goto :MultiMC_Missing
+IF NOT EXIST "MultiMC" goto :MultiMC_Missing
 
 IF NOT EXIST "%~dp0.\MultiMC\instances\Update_Modpack.cmd" goto :modpack_installer
 
