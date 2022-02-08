@@ -1,5 +1,5 @@
 @echo off
-echo Updating AT Launcher...
+echo Updating MultiMC Launcher...
 echo.
 echo.
 svn\svn.exe update --accept=tf

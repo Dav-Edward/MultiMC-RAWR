@@ -2,7 +2,7 @@
 cd %~dp0
 IF NOT EXIST "ATLauncher" goto :MultiMC_Missing
 
-IF NOT EXIST "%~dp0.\ATLauncher\instances\Update_Modpack.cmd" goto :modpack_installer
+IF NOT EXIST "%~dp0.\MultiMC\instances\Update_Modpack.cmd" goto :modpack_installer
 
 goto :modpack_updater
 
@@ -10,7 +10,7 @@ goto :modpack_updater
 echo.
 echo Installing MurrpCraft...
 IF NOT EXIST "%~dp0.\svn\svn.exe" goto :error_svn_missing
-.\svn\svn.exe checkout https://github.com/Dav-Edward/MurrpCraft.git/trunk .\ATLauncher\instances\MurrpCraft --non-interactive
+.\svn\svn.exe checkout https://github.com/Dav-Edward/MurrpCraft.git/trunk .\MultiMC\instances\MurrpCraft --non-interactive
 IF %ERRORLEVEL% NEQ 0 goto :error_svn
 echo.
 echo Install complete.
@@ -19,9 +19,9 @@ echo.
 goto modpack_updater
 
 :modpack_updater
-call .\ATLauncher\instances\MurrpCraft\Update_Modpack.cmd
+call .\MultiMC\instances\MurrpCraft\Update_Modpack.cmd
 cd %~dp0
-start "" .\ATLauncher\ATLauncher.exe -launch "MurrpCraft"
+start "" .\MultiMC\MultiMC.exe -launch "MurrpCraft"
 exit
 
 :error_svn_missing
