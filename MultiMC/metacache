@@ -1,0 +1,13 @@
+{
+    "entries": [
+        {
+            "base": "translations",
+            "etag": "W/\"62cb278b-3d0a\"",
+            "last_changed_timestamp": 1658107278261,
+            "md5sum": "0875a26c36e6256cb37c94a81b441fa4",
+            "path": "index_v2.json",
+            "remote_changed_timestamp": "Sun, 10 Jul 2022 19:24:59 GMT"
+        }
+    ],
+    "version": "1"
+}
