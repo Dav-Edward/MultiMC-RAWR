@@ -32,7 +32,7 @@ EXIT
 
 :error_svn
 echo.
-echo ERROR: Something went wront with the SVN updater tool.
+echo ERROR: Something went wrong with the SVN updater tool.
 pause
 EXIT
 
